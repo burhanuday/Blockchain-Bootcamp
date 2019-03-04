@@ -37,6 +37,10 @@ console.log(message);
 // copying by reference for objects
 // objects differ from primitives
 // A variable stores not the object itself, but its “address in memory”, in other words “a reference” to it.
+let p = person;
+console.log(p == person); //true
+console.log(p === person); //true
+
 let anotherPerson = user;
 anotherPerson["newProperty"] = "This is the new property";
 console.log(user);
@@ -51,7 +55,12 @@ let permissions2 = { canEdit: true };
 Object.assign(user, permissions1, permissions2);
 
 // or
+user = {name: "burhan"}
 let newUser = Object.assign({}, user);
+console.log(newUser == user);
+console.log(newUser === user);
+console.log(user);
+console.log(newUser);
 
 // using the rest operator
 newUser = {...person}
