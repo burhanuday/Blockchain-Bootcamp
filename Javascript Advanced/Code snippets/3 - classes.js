@@ -1,3 +1,4 @@
+// Old ES5 way
 // Using constructor functions
 function Person(fn, ln) {
     this.first_name = fn;
@@ -16,6 +17,7 @@ let person = new Person("John", "Doe");
 person.displayName(); // Prints Name: John Reed
 person.displayThis();
 
+// ES6 Classes
 /* class MyClass {
     constructor(...) {
         // ...
@@ -42,7 +44,7 @@ class User {
     }
 }
 
-let user = new User("Joh");
+let user = new User("John");
 user.sayHi();
 user.displayThis();
 
