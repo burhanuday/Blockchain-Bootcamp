@@ -13,4 +13,21 @@ let obj = {
     }
 }
 
-obj.example();
+//obj.example();
+
+
+
+
+
+let name = "Burhan";
+{
+    let name = "Vidit";
+    console.log(name);
+}
+console.log(name);
+
+
+
+
+
+
